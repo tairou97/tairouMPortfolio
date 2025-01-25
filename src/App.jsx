@@ -1,35 +1,26 @@
-import { useEffect } from "react";
-import { gsap } from "gsap";
+// App.jsx
+import { useState, useEffect } from "react";
+import Preloader from "./componets/preloader/Preloader"; // Importiere die Preloader-Komponente
 import "./App.css";
+import Home from "./componets/home/Home";
 
-function App() {
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const elements = document.querySelectorAll(".text, p");
-
-    elements.forEach((element) => {
-      // Text in Zeichen splitten
-      const chars = element.textContent.split("");
-      element.innerHTML = chars
-        .map((char) => `<span class="char">${char}</span>`)
-        .join("");
-
-      // Animation für die Zeichen
-      gsap.from(element.querySelectorAll(".char"), {
-        duration: 1,
-        opacity: 0,
-        y: 50,
-        stagger: 0.05,
-        ease: "power2.out",
-      });
-    });
+    // Simuliere das Laden der Seite und entferne den Preloader nach 3 Sekunden
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Preloader zeigt sich für 3 Sekunden
   }, []);
 
   return (
     <div className="App">
-      <h1 className="text">Hello World!</h1>
-      <p>This is a simple animation using GSAP.</p>
+      <Preloader />
+      {loading ? null : <Home />}
+      {/* Zeige die Home-Komponente nur, wenn das Laden beendet ist */}
     </div>
   );
-}
+};
 
 export default App;

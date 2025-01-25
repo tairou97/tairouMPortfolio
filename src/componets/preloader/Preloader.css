@@ -1,0 +1,80 @@
+/* Preloader Container */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    /* Sanftes Ausblenden */
+}
+
+/* Loader Kreis */
+.loader {
+
+    /* Blauer Teil des Kreises */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px;
+    /* Abstand zum Text */
+}
+
+/* Dreh-Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Textanimation */
+.loading-text {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #c4c4c4;
+    /* Gleiche Farbe wie der Kreis */
+    letter-spacing: 1.5px;
+    opacity: 0;
+    animation: fadeInOut 7s ease-in-out infinite;
+    animation-delay: 1s;
+    /* Verzögerung für Textanzeige */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Fade-in und Fade-out für den Text */
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Preloader Ausblenden nach dem Laden */
+.preloader.loaded {
+    opacity: 0;
+    pointer-events: none;
+}
