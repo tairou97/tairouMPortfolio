@@ -1,6 +1,9 @@
 import Tairou from "../../assets/ich3.jpeg";
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 function Home() {
   useEffect(() => {
     const elements = document.querySelectorAll(".text, p");
@@ -29,7 +32,7 @@ function Home() {
         <img src={Tairou} alt="Tairou" />
       </div>
       <div className="boxmain">
-        <div className="box">
+        <Carousel className="box">
           <div className="App1">
             <h1 className="text">Hello World!</h1>
             <p>This is a simple animation using GSAP.</p>
@@ -57,7 +60,7 @@ function Home() {
             <h1 className="text">By Tairou</h1>
             <p>This is a simple animation using GSAP.</p>
           </div>
-        </div>
+        </Carousel>
       </div>
     </div>
   );
