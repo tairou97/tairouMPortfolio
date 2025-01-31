@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../assets//fonts/Chillax-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Gambarino";
+  src: url("../../assets//fonts/Gambarino-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Chillax";
+  src: url("../../assets//fonts/Chillax-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Ranade";
+  src: url("../../assets//fonts/Ranade-Variable.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../assets//fonts/Satoshi-Variable.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Supreme";
+  src: url("../../assets//fonts/Supreme-Variable.ttf") format("woff2");
+}
+.navbar {
+  font-family: "ClashDisplay";
+  font-size: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 0.5rem 1rem;
+}
+.navbar ul li a {
+  color: #ededed;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+}/*# sourceMappingURL=NavBar.css.map */

@@ -1,8 +1,10 @@
 // App.jsx
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Preloader from "./componets/preloader/Preloader"; // Importiere die Preloader-Komponente
 import "./App.css";
-import Home from "./componets/home/Home";
+import Routes from "./componets/Routes/Routes";
+import NavBar from "./componets/Nav/NavBar";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -15,11 +17,17 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <Preloader />
-      {loading ? null : <Home />}
-      {/* Zeige die Home-Komponente nur, wenn das Laden beendet ist */}
-    </div>
+    <Router>
+      <div className="App">
+        <Preloader />
+        {loading ? null : (
+          <>
+            <NavBar />
+            <Routes />
+          </>
+        )}
+      </div>
+    </Router>
   );
 };
 
