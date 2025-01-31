@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+
 import "./NavBar.css";
 const NavBar = () => {
   const navBar = [
@@ -8,6 +9,7 @@ const NavBar = () => {
     { id: 4, name: "Skills", to: "/skills" },
     { id: 5, name: "Contact", to: "/contact" },
   ];
+
   return (
     <div className="navbar">
       <ul>
