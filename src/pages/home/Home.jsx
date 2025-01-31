@@ -1,7 +1,7 @@
 import Tairou from "../../assets/ich3.jpeg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/all";
 
 // import { Carousel } from "react-responsive-carousel";
 import "./Home.css";
@@ -12,36 +12,33 @@ function Home() {
   const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
-  let direction = 1;
+  let direction = -1;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    requestAnimationFrame(animation);
     gsap.to(slider.current, {
-      ScrollTrigger: {
+      scrollTrigger: {
         trigger: document.documentElement,
+        scrub: 0.25,
         start: 0,
         end: window.innerHeight,
-        scrub: true,
-        onUpdate: (e) => {
-          e.direction * -1;
-        },
+        onUpdate: (e) => (direction = e.direction * -1),
       },
-      x: "-=300px",
+      x: "-500px",
     });
+    requestAnimationFrame(animation);
   }, []);
 
   const animation = () => {
-    if (xPercent <= -100) {
+    if (xPercent < -100) {
       xPercent = 0;
-    }
-    if (xPercent > 0) {
+    } else if (xPercent > 0) {
       xPercent = -100;
     }
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
-    xPercent += 0.1 * direction;
     requestAnimationFrame(animation);
+    xPercent += 0.1 * direction;
   };
 
   useEffect(() => {
@@ -70,9 +67,9 @@ function Home() {
       <div className="image">
         <img src={Tairou} alt="Tairou" />
         <div className="sliderContainer">
-          <div className="slider">
-            <p ref={firstText}>Tairou Mouhamed</p>
-            <p ref={secondText}>Tairou Mouhamed</p>
+          <div ref={slider} className="slider">
+            <p ref={firstText}>Tairou Mouhamed ° </p>
+            <p ref={secondText}>° Tairou Mouhamed </p>
           </div>
         </div>
       </div>
