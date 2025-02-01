@@ -12,15 +12,25 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <ul>
-        {navBar.map((item) => {
-          return (
-            <li key={item.id}>
-              <NavLink to={item.to}>{item.name}</NavLink>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="navBarcontainer">
+        <div className="logo">
+          <p className="copyrigth">©</p>
+          <div className="name">
+            <p className="codeby">Code by</p>
+            <p className="tairou">Tairou</p>
+            <p className="toure">Touré</p>
+          </div>
+        </div>
+        <ul>
+          {navBar.map((item) => {
+            return (
+              <li key={item.id}>
+                <NavLink to={item.to}>{item.name}</NavLink>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

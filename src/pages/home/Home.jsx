@@ -64,6 +64,14 @@ function Home() {
 
   return (
     <div className="container">
+      <div className="Jobs">
+        <div className="jobsDe">
+          {" "}
+          <h4>
+            <span>Freelance</span>Web Developer
+          </h4>
+        </div>
+      </div>
       <div className="image">
         <img src={Tairou} alt="Tairou" />
         <div className="sliderContainer">
@@ -71,36 +79,6 @@ function Home() {
             <p ref={firstText}>Tairou Mouhamed ° </p>
             <p ref={secondText}>° Tairou Mouhamed </p>
           </div>
-        </div>
-      </div>
-
-      <div className="headline">
-        <div className="App1">
-          <h1 className="text">Hello World!</h1>
-          <p>This is a simple animation using GSAP.</p>
-        </div>
-        <div className="App2">
-          <h1 className="text">React</h1>
-          <p>React is a JavaScript library for building user interfaces.</p>
-        </div>
-        <div className="App3">
-          <h1 className="text">GSAP</h1>
-          <p>GSAP is a JavaScript library for animations.</p>
-        </div>
-        <div className="App4">
-          <h1 className="text">And more...</h1>
-          <p>
-            This is just a simple example, you can add more animations as
-            needed.
-          </p>
-        </div>
-        <div className="App5">
-          <h1 className="text">Thank you!</h1>
-          <p>This is a simple animation using GSAP.</p>
-        </div>
-        <div className="App6">
-          <h1 className="text">By Tairou</h1>
-          <p>This is a simple animation using GSAP.</p>
         </div>
       </div>
     </div>

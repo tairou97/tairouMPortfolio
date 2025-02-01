@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ClashDisplay';
-    src: url('../../assets//fonts/Chillax-Medium.ttf') format('woff2')
+    src: url('../../assets//fonts/ClashDisplay-Variable.ttf') format('woff2')
 }
 
 @font-face {
@@ -30,10 +30,78 @@
 
 .navbar {
     font-family: "ClashDisplay";
-    font-size: 2rem;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+    font-size: 1.3rem;
+    // position: absolute;
+
+    .navBarcontainer {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        z-index: 1;
+        color: white;
+        justify-content: space-between;
+        padding: 35px;
+        font-weight: 300;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+
+            p {
+                margin: 0px;
+                transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+
+            .name {
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-left: 5px;
+                transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+                .codeby {
+                    padding-left: 0.3em;
+                }
+
+                .tairou {
+                    padding-left: 0.3em;
+                }
+
+                .toure {
+                    padding-left: 0.3em;
+                    position: absolute;
+                    left: 157px;
+
+                }
+            }
+
+            &:hover {
+                .copyrigth {
+                    transform: rotate(360deg);
+                }
+
+                .name {
+                    padding-left: 30px;
+
+                    .codeby {
+                        transform: translateX(-135%);
+                    }
+
+                    .tairou {
+                        transform: translateX(-120px);
+                    }
+
+                    .toure {
+                        transform: translateX(-88px);
+                    }
+                }
+            }
+        }
+    }
 
     ul {
         // border: 1px solid white;
@@ -44,6 +112,9 @@
 
         li {
             padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
 
             a {
                 color: #ededed;

@@ -1,5 +1,36 @@
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../assets//fonts/ClashDisplay-Variable.ttf") format("woff2");
+}
 .container {
   min-height: 100vh;
+  position: relative;
+}
+.container .Jobs {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container .Jobs .jobsDe {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px "#000000";
+  padding: 0 3rem;
+}
+.container .Jobs .jobsDe h4 {
+  font-family: "ClashDisplay";
+  color: #fff;
+}
+.container .Jobs .jobsDe h4 span {
+  display: block;
+}
+.container .Jobs .texth3 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px "#000000";
 }
 .container .image {
   width: 100%;
