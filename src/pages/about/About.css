@@ -1,0 +1,127 @@
+.about .containerAbout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2.5rem 2.5%;
+  font-family: "ClashDisplay";
+}
+.about .containerAbout .aboutBox1 {
+  padding-top: 9rem;
+  margin-bottom: 4rem;
+}
+.about .containerAbout .aboutBox1 .aboutText {
+  font-family: "ClashDisplay";
+  margin-top: 2rem;
+}
+.about .containerAbout .aboutBox1 .more img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+.about .containerAbout .aboutBox1 .more h1 {
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 17cqw;
+  line-height: 15cqw;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #000000;
+}
+.about .containerAbout .aboutBox1 .aboutText {
+  font-size: 1.5em;
+  line-height: 1.66;
+  margin-bottom: 1em;
+  font-weight: 450;
+  padding: 1em 1.5rem 0 0;
+}
+.about .containerAbout .aboutBox2 {
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.about .containerAbout .aboutBox2 .experience {
+  display: flex;
+}
+.about .containerAbout .aboutBox2 .experience .experienceBox1 h3,
+.about .containerAbout .aboutBox2 .experience .experienceBox2 h3,
+.about .containerAbout .aboutBox2 .experience .experienceBox3 h3 {
+  font-size: 1.5em;
+  line-height: 1.66;
+  margin-bottom: 0.5em;
+  font-weight: 450;
+  padding: 1em 1.5rem 0 0;
+}
+.about .containerAbout .aboutBox2 .experience .experienceBox1 p,
+.about .containerAbout .aboutBox2 .experience .experienceBox2 p,
+.about .containerAbout .aboutBox2 .experience .experienceBox3 p {
+  font-size: 1em;
+  line-height: 1.66;
+  margin-bottom: 1em;
+  font-weight: 450;
+  padding: 1em 1.5rem 0 0;
+}
+.about .containerAbout .aboutBox2 .experience .stripe {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ababab;
+  margin-bottom: 2em;
+  gap: 10px;
+}
+.about .containerAbout .aboutBox2 .experience .experienceBox1 span,
+.about .containerAbout .aboutBox2 .experience .experienceBox2 span,
+.about .containerAbout .aboutBox2 .experience .experienceBox3 span {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 0 1.6rem 0;
+}
+.about .containerAbout .aboutBox3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.about .containerAbout .aboutBox3 .clients1 {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.about .containerAbout .aboutBox3 .clients2 {
+  grid-column: 1/2;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox3 .clients2 img,
+.about .containerAbout .aboutBox3 .clients3 img,
+.about .containerAbout .aboutBox3 .clients4 img,
+.about .containerAbout .aboutBox3 .clients5 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .containerAbout .aboutBox3 .clients3 {
+  grid-column: 2/3;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox3 .clients4 {
+  grid-column: 3/4;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox3 .clients5 {
+  grid-column: 4/5;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox3 .aboutText {
+  font-family: "ClashDisplay";
+  padding: 1rem;
+}
+.about .containerAbout .aboutBox3 .more img {
+  width: 100%;
+}/*# sourceMappingURL=About.css.map */
