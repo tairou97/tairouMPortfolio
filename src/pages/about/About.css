@@ -1,0 +1,84 @@
+.about .containerAbout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10rem;
+  padding: 2.5rem 2.5%;
+  font-family: "ClashDisplay";
+}
+.about .containerAbout .aboutBox1 {
+  padding-top: 9rem;
+}
+.about .containerAbout .aboutBox1 .aboutText {
+  font-family: "ClashDisplay";
+  padding: 1rem;
+}
+.about .containerAbout .aboutBox1 .more img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+.about .containerAbout .aboutBox1 .more h1 {
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 17cqw;
+  line-height: 15cqw;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #000000;
+}
+.about .containerAbout .aboutBox2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.about .containerAbout .aboutBox2 .clients1 {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.about .containerAbout .aboutBox2 .clients2 {
+  grid-column: 1/2;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox2 .clients2 img,
+.about .containerAbout .aboutBox2 .clients3 img,
+.about .containerAbout .aboutBox2 .clients4 img,
+.about .containerAbout .aboutBox2 .clients5 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .containerAbout .aboutBox2 .clients3 {
+  grid-column: 2/3;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox2 .clients4 {
+  grid-column: 3/4;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox2 .clients5 {
+  grid-column: 4/5;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+}
+.about .containerAbout .aboutBox2 .aboutText {
+  font-family: "ClashDisplay";
+  padding: 1rem;
+}
+.about .containerAbout .aboutBox2 .more img {
+  width: 100%;
+}
+.about .containerAbout .aboutBox3 .aboutText {
+  font-family: "ClashDisplay";
+  padding: 1rem;
+}
+.about .containerAbout .aboutBox3 .more img {
+  width: 100%;
+}/*# sourceMappingURL=About.css.map */

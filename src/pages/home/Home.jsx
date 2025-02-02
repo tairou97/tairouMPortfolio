@@ -66,9 +66,8 @@ function Home() {
     <div className="container">
       <div className="Jobs">
         <div className="jobsDe">
-          {" "}
           <h4>
-            <span>Freelance</span>Web Developer
+            <span className="jobFr">Freelance</span>Web Developer
           </h4>
         </div>
       </div>

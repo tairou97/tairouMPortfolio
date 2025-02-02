@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./NavBar.css";
 const NavBar = () => {
@@ -13,14 +13,14 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navBarcontainer">
-        <div className="logo">
+        <Link to="https://tairou-m-portfolio.vercel.app/" className="logo">
           <p className="copyrigth">©</p>
           <div className="name">
             <p className="codeby">Code by</p>
             <p className="tairou">Tairou</p>
             <p className="toure">Touré</p>
           </div>
-        </div>
+        </Link>
         <ul>
           {navBar.map((item) => {
             return (
