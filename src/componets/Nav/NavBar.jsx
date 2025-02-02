@@ -6,7 +6,7 @@ const NavBar = () => {
     { id: 1, name: "Home", to: "/" },
     { id: 2, name: "Work", to: "/work" },
     { id: 3, name: "About", to: "/about" },
-    { id: 4, name: "Skills", to: "/skills" },
+    { id: 4, name: "Contact", to: "/contact" },
     { id: 5, name: "Contact", to: "/contact" },
   ];
 

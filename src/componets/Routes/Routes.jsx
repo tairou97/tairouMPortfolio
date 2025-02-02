@@ -1,7 +1,7 @@
 import Home from "../../pages/home/Home";
 import Work from "../../pages/work/Work";
 import About from "../../pages/about/About";
-import Skills from "../../pages/skills/Skills";
+import Error from "../../pages/404Page/ErrorPage";
 import Contact from "../../pages/contact/Contact";
 import { Routes, Route } from "react-router-dom";
 
@@ -12,8 +12,8 @@ const routes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />{" "}
+        <Route path="/*" element={<Error />} />
       </Routes>
     </div>
   );

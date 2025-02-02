@@ -1,0 +1,14 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-family: 'ClashDisplay', sans-serif;
+    text-align: center;
+}
