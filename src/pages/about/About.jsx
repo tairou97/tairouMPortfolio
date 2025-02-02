@@ -13,10 +13,13 @@ const About = () => {
           </div>
 
           <p className="aboutText">
-            Ich bin Tairou, 26, Full-Stack-Entwickler aus Berlin. Mit meiner
-            Leidenschaft für innovative Technologien und sauberem Code entwickle
-            ich Lösungen, die Nutzer begeistern. Ich bringe Projekte mit vollem
-            Einsatz voran – lass uns gemeinsam etwas bewegen!
+            Als web developer aus Berlin spezialisiere ich mich auf die
+            Erstellung innovativer und nutzerzentrierter Lösungen mit sauberem
+            und effizientem Code. Mit meiner Leidenschaft für moderne
+            Technologien bringe ich Projekte mit vollem Einsatz zum Leben. Ich
+            arbeite gerne mit ambitionierten Teams zusammen, um beeindruckende
+            und qualitativ hochwertige digitale Erlebnisse zu schaffen. Lass uns
+            gemeinsam etwas Großartiges erschaffen!
           </p>
         </div>
         <div className="aboutBox2">
