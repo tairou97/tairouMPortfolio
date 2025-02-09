@@ -2,6 +2,7 @@ import Tairou from "../../assets/ich3.jpeg";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
 
 // import { Carousel } from "react-responsive-carousel";
 import "./Home.css";
@@ -66,9 +67,22 @@ function Home() {
     <div className="container">
       <div className="Jobs">
         <div className="jobsDe">
-          <h4>
-            <span className="jobFr">Freelance</span>Web Developer
-          </h4>
+          <motion.h4
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <span className="jobFr">
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                Freelance
+              </motion.span>
+            </span>
+            Web Developer
+          </motion.h4>
         </div>
       </div>
       <div className="image">
