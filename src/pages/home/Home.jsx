@@ -1,6 +1,6 @@
 import Tairou from "../../assets/ich3.jpeg";
 import HomeAbout from "./homeAbout/homeAbout";
-import WorkHome from "../work/WorkHome/WorkHome";
+import WorkHome from "../work/workHome/WorkHome";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
