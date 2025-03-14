@@ -1,8 +1,11 @@
 import Tairou from "../../assets/ich3.jpeg";
+import HomeAbout from "./homeAbout/homeAbout";
+import WorkHome from "../work/WorkHome/WorkHome";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // import { Carousel } from "react-responsive-carousel";
 import "./Home.css";
@@ -42,58 +45,67 @@ function Home() {
     xPercent += 0.1 * direction;
   };
 
-  useEffect(() => {
-    const elements = document.querySelectorAll(".text, p");
+  // useEffect(() => {
+  //   const elements = document.querySelectorAll(".text, p");
 
-    elements.forEach((element) => {
-      // Text in Zeichen splitten
-      const chars = element.textContent.split("");
-      element.innerHTML = chars
-        .map((char) => `<span class="char">${char}</span>`)
-        .join("");
+  //   elements.forEach((element) => {
+  //     // Text in Zeichen splitten
+  //     const chars = element.textContent.split("");
+  //     element.innerHTML = chars
+  //       .map((char) => `<span class="char">${char}</span>`)
+  //       .join("");
 
-      // Animation für die Zeichen
-      gsap.from(element.querySelectorAll(".char"), {
-        duration: 1,
-        opacity: 0,
-        y: 50,
-        stagger: 0.05,
-        ease: "power2.out",
-      });
-    });
-  }, []);
+  //     // Animation für die Zeichen
+  //     gsap.from(element.querySelectorAll(".char"), {
+  //       duration: 1,
+  //       opacity: 0,
+  //       y: 50,
+  //       stagger: 0.05,
+  //       ease: "power2.out",
+  //     });
+  //   });
+  // }, []);
 
   return (
-    <div className="container">
-      <div className="Jobs">
-        <div className="jobsDe">
-          <motion.h4
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            <span className="jobFr">
-              <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-              >
-                Freelance
-              </motion.span>
-            </span>
-            Web Developer
-          </motion.h4>
+    <div className="home">
+      <div className="container">
+        <div className="Jobs">
+          <div className="jobsDe">
+            <motion.h4
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              <span className="jobFr">
+                <motion.span
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  Freelance
+                </motion.span>
+              </span>
+              Web Developer
+            </motion.h4>
+          </div>
         </div>
-      </div>
-      <div className="image">
-        <img src={Tairou} alt="Tairou" />
-        <div className="sliderContainer">
-          <div ref={slider} className="slider">
-            <p ref={firstText}>Tairou Mouhamed ° </p>
-            <p ref={secondText}>° Tairou Mouhamed </p>
+        <div className="image">
+          <img src={Tairou} alt="Tairou" />
+          <div className="sliderContainer">
+            <div ref={slider} className="slider">
+              <p ref={firstText}>Tairou Mouhamed ° </p>
+              <p ref={secondText}>° Tairou Mouhamed </p>
+            </div>
           </div>
         </div>
       </div>
+      {/*==================== Home About ==================== */}
+      <HomeAbout />
+      <div className="aboute3">
+        <Link to="/about">Mehr ... </Link>
+      </div>
+
+      <WorkHome />
     </div>
   );
 }

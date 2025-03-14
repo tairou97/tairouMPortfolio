@@ -1,0 +1,62 @@
+.contact {
+  min-height: 100vh;
+  background-color: #1c1d20;
+  font-family: "ClashDisplay";
+}
+.contact .infoma {
+  padding: 3rem;
+  margin: 0 auto;
+}
+.contact h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding: 10rem 4rem;
+  color: #fff;
+}
+.contact a {
+  font-size: 3rem;
+  font-family: "ClashDisplay";
+  text-decoration: none;
+  font-weight: 200;
+  color: #fff;
+  padding: 1rem 4rem;
+}
+.contact .contactIndo {
+  margin-bottom: 1.5rem;
+}
+.contact .contactIndo h3 {
+  font-size: 1.6rem;
+  color: rgba(152, 152, 152, 0.9019607843);
+  font-weight: 400;
+  padding: 0 20px;
+}
+.contact .contactIndo a {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  padding: 20px;
+}
+.contact .details h3 {
+  font-size: 1.6rem;
+  color: rgba(152, 152, 152, 0.9019607843);
+  font-weight: 400;
+  padding: 0 20px;
+}
+.contact .details p {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 200;
+  padding: 1px 20px;
+}
+.contact .social h3 {
+  font-size: 1.6rem;
+  color: rgba(152, 152, 152, 0.9019607843);
+  font-weight: 400;
+  padding: 2rem 20px 0;
+}
+.contact .social a {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 300;
+  padding: 20px;
+}/*# sourceMappingURL=Contact.css.map */

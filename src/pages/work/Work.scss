@@ -1,123 +1,136 @@
 .workContainer {
     font-family: "ClashDisplay";
-    padding: 2.8rem 2.5%;
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 9rem;
+    margin-bottom: 4rem;
+
+    .head {
+
+        padding: 3rem;
+        margin: 0 auto;
+        max-width: 1100px;
+        font-size: calc(clamp(3.25em, 7vw, 8em));
+
+        h2 {
+            font-weight: 400;
+            font-size: 3.3rem;
+        }
+    }
 
     h1 {
-        font-size: 17cqw;
-        line-height: 1.5;
+        font-size: 10cqw;
         font-weight: 500;
-        border-bottom: 1px solid #bababa;
+        padding: 20px;
+        line-height: 15cqw;
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: 0 auto;
+        max-width: 1300px;
     }
 
-    .workBox {
+    h2 {
+        font-size: 2rem;
+        color: #000000;
+
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin-top: 30px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #222;
+        margin-bottom: 5px;
+        padding-bottom: clamp(1em, 2vw, 2.5em); // Responsive Design
+    }
+
+    p {
+        font-size: 1rem;
+        color: #777;
+    }
+
+    ul {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: auto repeat(8, 1fr);
-        min-height: 100vh;
-        gap: 1rem;
-        border-radius: 5px;
-        padding: 3rem 1rem;
-        cursor: pointer;
+        grid-template-columns: repeat(2, 1fr); // Automatisches Grid
+        gap: 20px; // Abstand zwischen den Karten
+        list-style-type: none;
+        margin: 0 auto;
+        max-width: 1300px;
     }
 
-    .itme {
+    li {
+        // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-        background-color: lightblue;
+        // &:hover {
+        //     transform: translateY(-5px); // Hebt die Karte bei Hover an
+        //     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Verstärkter Schatten
+        // }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            margin-top: 10px;
+            width: 100%;
+            object-fit: cover;
+            padding-bottom: clamp(1.5em, 4vw, 2.5em);
+        }
+
+        .technologies {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    }
+
+    .moreWorks {
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
-
-    .itme img {
         width: 100%;
-        height: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
+        font-weight: 300;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        transition: background-color 0.3s ease;
 
-    .workItem1 {
-        grid-column: 1/ 2;
-        grid-row: 1 / 2
-    }
-
-    .workItem2 {
-
-        grid-column: 2 / span 2;
-        grid-row: 1 / span 2;
-    }
-
-    .workItem3 {
-        height: 100%;
-        width: 100%;
-        grid-column: 4 / span 4;
-        grid-row: 1 / span 2;
-    }
-
-    .workItem4 {
-        grid-column: 8 / span 3;
-        grid-row: 1 / span 2;
-    }
-
-    .workItem5 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .workItem6 {
-        grid-column: 1 / span 3;
-        grid-row: 3 / 5;
-    }
-
-    .workItem7 {
-        grid-column: 4 / span 3;
-        grid-row: 3 / span 4;
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 20px 35px;
+            border-radius: 4rem;
+            background-color: #1f1f1f;
+        }
 
     }
+}
 
-    .workItem8 {
-        grid-column: 7 / span 4;
-        grid-row: 3 / span 2;
+/* CSS für das responsives Design */
+
+@media screen and (max-width: 768px) {
+    .homeWork {
+        grid-template-columns: repeat(1, 1fr); // Einzelne Karte pro Zeile
     }
-
-    .workItem9 {
-        grid-column: 1 / span 3;
-        grid-row: 5 / span 2;
-    }
-
-    .workItem10 {
-        grid-column: 7 / span 3;
-        grid-row: 5 / span 2;
-    }
-
-
-    .workItem11 {
-        grid-column: 10 / 11;
-        grid-row: 5 / span 2;
-        ;
-    }
-
-    .workItem12 {
-        grid-column: 1 /span 2;
-        grid-row: 7 / span 2;
-        ;
-    }
-
-    .workItem13 {
-        grid-column: 3 / span 3;
-        grid-row: 7 / span 2;
-    }
-
-    .workItem14 {
-        grid-column: 6 / span 2;
-        grid-row: 7 / span 2;
-    }
-
-    .workItem15 {
-        grid-column: 8 / span 3;
-        grid-row: 7 / span 2;
-    }
-
-
 }
