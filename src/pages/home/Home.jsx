@@ -1,4 +1,4 @@
-import Tairou from "../../assets/ich3.jpeg";
+import Tairou from "../../../public/ich3.jpeg";
 import HomeAbout from "./homeAbout/homeAbout";
 import WorkHome from "../work/workHome/WorkHome";
 import { useEffect, useRef } from "react";

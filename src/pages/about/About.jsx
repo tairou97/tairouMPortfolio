@@ -1,4 +1,4 @@
-import Img from "../../assets/about.jpeg";
+import Img from "../../../public/about.jpeg";
 import ImgCl from "../../assets/logo-transparent-png.png";
 import AbouteMe from "../home/homeAbout/homeAbout";
 import "./About.css";

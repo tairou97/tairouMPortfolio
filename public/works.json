@@ -6,7 +6,7 @@
       "description": "Eine Website für eine Kindertagesstätte mit Informationen zum Tagesablauf.",
       "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "link": "https://kita-hoppelhasen-g-ug.vercel.app/",
-      "image": "./src/assets/kinder.jpeg"
+  "image": "/kinder.jpeg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Projekt zur digitalen Transformation",
       "technologies": ["React", "Node.js"],
       "link": "https://konak-comp.vercel.app/",
-     "image": "./src/assets/garten.jpeg"
+     "image": "/garten.jpeg"
     }
   ],
   "moreWorks": [
@@ -24,7 +24,7 @@
       "description": "Eine Website für eine Kindertagesstätte mit Informationen zum Tagesablauf.",
       "technologies": ["React", "Tailwind CSS", "Framer Motion"],
       "link": "https://kita-hoppelhasen-g-ug.vercel.app/",
-      "image": "./src/assets/kinder.jpeg"
+      "image": "/kinder.jpeg"
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       "description": "Projekt zur digitalen Transformation",
       "technologies": ["React", "Node.js"],
       "link": "https://konak-comp.vercel.app/",
-     "image": "./src/assets/garten.png"
+     "image": "/garten.png"
     },
     {
       "id": 4,
@@ -40,7 +40,7 @@
       "description": "Ein E-Commerce-Projekt, inspiriert von Amazon.",
       "technologies": ["React", "MongoDB", "Express.js", "Node.js"],
       "link": "https://amazon-react-clone-one.vercel.app/",
-       "image": "./src/assets/amaz.png"
+       "image": "/amaz.png"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "description": "Eine Plattform zur Buchung von Event-Tickets.",
       "technologies": ["React", "Tailwind", "Node.js", "Stripe API"],
       "link": "https://eventhub-five-jade.vercel.app/",
-      "image": "./src/assets/event.jpeg"
+      "image": "/event.jpeg"
     }
     , {
       "id": 6,
@@ -56,7 +56,8 @@
       "description": "Ein Projekt zur Verwaltung von Galerien.",
       "technologies": ["React", "MongoDB", "Express.js", "Node.js"],
       "link": "https://verc-test-neon.vercel.app/",
-      "image": "./src/assets/immohub.jpeg"
+      "image": "/immohub.jpeg"
     }
+    
   ]
 }
