@@ -1,5 +1,6 @@
 import Img from "../../assets/about.jpeg";
 import ImgCl from "../../assets/logo-transparent-png.png";
+import AbouteMe from "../home/homeAbout/homeAbout";
 import "./About.css";
 
 const About = () => {
@@ -11,16 +12,7 @@ const About = () => {
             <h1>Bit More About Me</h1>
             <img src={Img} alt="" />
           </div>
-
-          <p className="aboutText">
-            Als web developer aus Berlin spezialisiere ich mich auf die
-            Erstellung innovativer und nutzerzentrierter Lösungen mit sauberem
-            und effizientem Code. Mit meiner Leidenschaft für moderne
-            Technologien bringe ich Projekte mit vollem Einsatz zum Leben. Ich
-            arbeite gerne mit ambitionierten Teams zusammen, um beeindruckende
-            und qualitativ hochwertige digitale Erlebnisse zu schaffen. Lass uns
-            gemeinsam etwas Großartiges erschaffen!
-          </p>
+          <AbouteMe />
         </div>
         <div className="aboutBox2">
           {" "}

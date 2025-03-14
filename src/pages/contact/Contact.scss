@@ -1,0 +1,83 @@
+.contact {
+    min-height: 100vh;
+    background-color: #1c1d20;
+    font-family: "ClashDisplay";
+
+
+
+    .infoma {
+        padding: 3rem;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 400;
+        padding: 10rem 4rem;
+        color: #fff;
+    }
+
+    a {
+        font-size: 3rem;
+        font-family: "ClashDisplay";
+        text-decoration: none;
+        font-weight: 200;
+        color: #fff;
+        padding: 1rem 4rem;
+
+    }
+
+    .contactIndo {
+        margin-bottom: 1.5rem;
+
+        h3 {
+            font-size: 1.6rem;
+            color: #989898e6;
+            font-weight: 400;
+            padding: 0 20px;
+        }
+
+        a {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 300;
+            padding: 20px;
+
+        }
+
+    }
+
+    .details {
+
+
+        h3 {
+            font-size: 1.6rem;
+            color: #989898e6;
+            font-weight: 400;
+            padding: 0 20px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 200;
+            padding: 1px 20px;
+        }
+    }
+
+    .social {
+        h3 {
+            font-size: 1.6rem;
+            color: #989898e6;
+            font-weight: 400;
+            padding: 2rem 20px 0;
+        }
+
+        a {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 300;
+            padding: 20px;
+        }
+    }
+}
