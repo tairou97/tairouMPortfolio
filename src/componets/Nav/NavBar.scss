@@ -106,7 +106,7 @@
     }
 
     ul {
-        // border: 1px solid white;
+        border: 1px solid white;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -125,6 +125,65 @@
                 padding: 10px;
                 display: inline-block;
             }
+        }
+    }
+
+    /* ===== Burger-Icon ===== */
+    .menu-icon {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    /* Animation beim Öffnen */
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+        .menu-icon {
+            display: flex;
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #1c1c1c;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            text-align: center;
+        }
+
+        ul.active {
+            display: flex;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        li a {
+            width: 100%;
+            padding: 1rem;
         }
     }
 

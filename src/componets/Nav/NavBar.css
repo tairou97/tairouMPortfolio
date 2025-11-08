@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "ClashDisplay";
   src: url("../../assets//fonts/ClashDisplay-Variable.ttf") format("woff2");
@@ -25,6 +26,9 @@
 .navbar {
   font-family: "ClashDisplay";
   font-size: 1.3rem;
+  /* ===== Burger-Icon ===== */
+  /* Animation beim Öffnen */
+  /* ===== Responsive ===== */
 }
 .navbar .navBarcontainer {
   position: fixed;
@@ -84,6 +88,7 @@
   transform: translateX(-88px);
 }
 .navbar ul {
+  border: 1px solid white;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -101,4 +106,50 @@
   list-style: none;
   padding: 10px;
   display: inline-block;
+}
+.navbar .menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.navbar .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+.navbar .menu-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar .menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar .menu-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+@media (max-width: 768px) {
+  .navbar .menu-icon {
+    display: flex;
+  }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+  }
+  .navbar ul.active {
+    display: flex;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .navbar li a {
+    width: 100%;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=NavBar.css.map */
