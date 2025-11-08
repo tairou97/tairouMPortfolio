@@ -102,7 +102,7 @@ function Home() {
       {/*==================== Home About ==================== */}
       <HomeAbout />
       <div className="aboute3">
-        <Link to="/about">Mehr ... </Link>
+        <Link to="/about">About me </Link>
       </div>
       {/*==================== Work Home ==================== */}
       <WorkHome />

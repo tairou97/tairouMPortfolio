@@ -83,7 +83,14 @@
 
 /* CSS für das responsives Design */
 @media screen and (max-width: 768px) {
-  .homeWork {
+  .homeWork h2 {
+    font-size: 1.5rem;
+  }
+  .homeWork h3 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .homeWork ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=WorkHome.css.map */

@@ -13,28 +13,39 @@
 
 h2 {
     grid-area: h2;
-    font-size: 3rem;
-    padding: 2rem 1rem;
-
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    padding: clamp(1.2rem, 2.5vw, 1.2rem);
 }
 
 .aboute1 {
     grid-area: aboute1;
-    // background-color: aliceblue;
-    font-size: 1.8rem;
-    padding: 1rem;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    padding: clamp(1.2rem, 3vw, 1.2rem);
 }
 
 .aboute2 {
     grid-area: aboute2;
-    // background-color: pink;
-    font-size: 1.2rem;
-    padding: 1rem;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    padding: clamp(1.2rem, 2.5vw, 1.2rem);
+}
+
+/* Für kleinere Bildschirme (z.B. Smartphones) */
+@media (max-width: 768px) {
+    .homeAbout {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "h2"
+            "aboute1"
+            "aboute2";
+    }
+
+    .aboute1 {
+        font-size: 1.2rem;
+        font-weight: 490;
+    }
+
+    .aboute2 {
+        font-size: 1.1rem;
+
+    }
 }

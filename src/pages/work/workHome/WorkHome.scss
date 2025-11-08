@@ -103,6 +103,19 @@
 
 @media screen and (max-width: 768px) {
     .homeWork {
-        grid-template-columns: repeat(1, 1fr); // Einzelne Karte pro Zeile
+        h2 {
+            font-size: 1.5rem;
+
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding: 20px;
+        }
+
+        ul {
+            grid-template-columns: repeat(1, 1fr); // Einzelne Karte pro Zeile
+        }
     }
+
 }

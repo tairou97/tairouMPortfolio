@@ -91,9 +91,8 @@
 
 
 .aboute3 {
-    font-size: 1.5rem;
-    padding: 1rem;
-
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +102,82 @@
         font-family: "ClashDisplay";
         text-decoration: none;
         color: #fff;
-        padding: 20px 35px;
-        border-radius: 4rem;
+        height: clamp(9em, 12vw, 11em);
+        width: clamp(9em, 12vw, 11em);
+        border-radius: 50%;
         background-color: #1f1f1f;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 
 //===============  Home About ==================
+
+@media screen and (max-width: 768px) {
+    .headline {
+        height: 70vh;
+    }
+
+    .aboute3 {
+
+
+        a {
+            font-size: 1rem;
+            height: clamp(6em, 12vw, 11em);
+            width: clamp(6em, 12vw, 11em);
+            border-radius: 50%;
+            background-color: #1f1f1f;
+            padding: 1rem;
+        }
+
+        a:hover {
+            background-color: #333;
+        }
+    }
+
+
+
+    .Jobs {
+        top: 30%;
+    }
+
+    .Jobs.jobsDe {
+        font-size: 3rem;
+    }
+
+    .Jobs.jobsDe h4 {
+        font-size: 2rem;
+    }
+
+    .Jobs.jobsDe.jobFr {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        height: 80vh;
+    }
+
+    .slider p {
+        font-size: 250px;
+    }
+
+    .slider p:nth-of-type(2) {
+        position: absolute;
+        left: 150%;
+    }
+
+
+
+    .headline {
+        background-color: #1f1f1f;
+    }
+
+    .headline h1 {
+        font-size: 5rem;
+        color: #fff;
+    }
+
+}
